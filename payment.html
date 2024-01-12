@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment Checkout Form</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style/header.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Ubuntu');
+
+    *{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+  
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+img {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+}
+
+body{
+  background: #8aa9c2;
+  margin: 0 10px;
+}
+
+.payment{
+  background: #f8f8f8;
+  max-width: 360px;
+  margin: 80px auto;
+  height: auto;
+  padding: 35px;
+  padding-top: 70px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.payment h2{
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  color: #0d3c61;
+}
+
+.form .label{
+  display: block;
+  color: #555555;
+  margin-bottom: 6px;
+  display:inline-block;
+}
+
+.input{
+  padding: 13px 0px 13px 25px;
+  width: 100%;
+  text-align: center;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  outline: none;
+  font-size: 16px;
+  color: #555555;
+}
+
+.card-grp{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-item{
+  width: 48%;
+}
+
+.space{
+  margin-bottom: 20px;
+}
+
+.icon-relative{
+  position: relative;
+}
+
+.icon-relative .fas,
+.icon-relative .far{
+  position: absolute;
+  bottom: 12px;
+  left: 15px;
+  font-size: 20px;
+  color: #555555;
+}
+
+.btn{
+  margin-top: 40px;
+  background: #4a8ec6;
+  padding: 12px;
+  text-align: center;
+  color: #f8f8f8;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.payment-logo{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  background: #413a3a;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  text-align: center;
+  line-height: 85px;
+}
+
+.payment-logo:before{
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 90px;
+  height: 90px;
+  background: #2196F3;
+  border-radius: 50%;
+}
+
+.payment-logo p{
+  position: relative;
+  color: #f8f8f8;
+  font-family: 'Baloo Bhaijaan', cursive;
+  font-size: 58px;
+}
+
+
+@media screen and (max-width: 420px){
+  .card-grp{
+    flex-direction: column;
+  }
+  .card-item{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .btn{
+    margin-top: 20px;
+  }
+}
+}
+}
+
+.main{
+    display: flex;
+    align-content:center;
+    justify-content:center;
+    padding: 30px;
+}
+
+.cpoy{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: rgba(255,255,255, .6);
+    text-decoration: none;
+}
+
+.main a span{
+    color: rgba(255,255,255, .6);
+    padding: 0px 50px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main dash{
+    color: rgba(255,255,255, .6);
+    
+}
+
+.main a span:hover{
+    color: rgb(255,255,255);
+    padding: 0px 50px;
+}
+
+  </style>
+</head>
+<body>
+  <!-- -------------------------------------------------Header start ------------------------------------------------->
+  <header>
+    <div id="brand"><a href="/">Spark.LK</a></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Products</a></a>
+          <ul>
+            <li><a href="laptop.html">Laptops</a></li>
+            <li><a href="phone.html">Mobile Phones</a></li>
+            <li><a href="tablets.html">tablets</a></li>
+            <li><a href="Electronic_Accessories.html">Other Electronic Accessories</a></li>
+            <li><a href="Beauty & personal care.html">Beauty & personal care</a></li>
+          </ul></li>
+
+      
+          <li><a href="/home">Events</a></li>
+          <li><a href="/home">Notifications</a></li>
+
+        </li>
+        <li id="login"><a href="login.html" >Login</a></li>
+        <li id="signup"><a href="reg.html">Signup</a></li>
+      </ul>
+    </nav>
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <ul class="mobile-menu">
+        <li><a href="/home">Home</a></li>
+        <li><a href="/products">Products</a></li>
+        <li><a href="/about">About</a></li>
+        <li id="login"><a href="login.html" >Login</a></li>
+        <li id="signup"><a href="/signup">Signup</a></li>
+      </ul>
+    </div>
+  </header>
+<!-- ------------------------------------------------------------Header end---------------------------------------------------------- -->
+
+  <script src="index.js"></script>
+
+
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <div class="container">
+    <img src="images/sparkl.png" alt="Avatar" class="image">
+    <div class="overlay">
+      <a href="#" class="icon" title="User Profile">
+        <i class="fa fa-user"></i>
+      </a>
+    </div>
+  </div>
+
+  
+<div class="wrapper">
+  <div class="payment">
+    <div class="payment-logo">
+      <p>P&b</p>
+    </div>
+    
+    
+    <h2>Payment & Billing Information</h2>
+   
+      <form action="payment.php" method="POST">
+      <div class="card space icon-relative">
+        <label class="label">First name:</label>
+        <input type="text" class="input" placeholder="card holder's first name" name="firstName" required>
+        <i class="fas fa-user"></i>
+      </div>
+      <div class="card space icon-relative">
+        <label class="label">Last name:</label>
+        <input type="text" class="input" placeholder="card holder's last name" name="lastName" required>
+        <i class="fas fa-user"></i>
+      </div>
+      <div class="card space icon-relative">
+        <label class="label">Card number:</label>
+        <input type="text" class="input" data-mask="0000 0000 0000 0000" placeholder="Card Number" name="CardNumber" required>
+        <i class="far fa-credit-card"></i>
+      </div>
+      <div class="card-grp space">
+        <div class="card-item icon-relative">
+          <label class="label">Expiry date:</label>
+          <input type="text" name="expiry-data" class="input" data-mask="00 / 00"  placeholder="00 / 00" name="Date" required>
+          <i class="far fa-calendar-alt"></i>
+        </div>
+        <div class="card-item icon-relative">
+          <label class="label">CVV:</label>
+          <input type="text" class="input" data-mask="000" placeholder="000" name="cvv" required>
+          <i class="fas fa-lock"></i>
+        </div>
+        
+      </div>
+      <div class="card space icon-relative">
+        <label class="label">Address line 1:</label>
+        <input type="text" class="input" placeholder="Address" name="addressline1" required>
+        <i class="fas fa-user"></i>
+      </div>
+      <div class="card space icon-relative">
+        <label class="label">Address line 2:</label>
+        <input type="text" class="input" placeholder="Address" name="addressline2" required>
+        <i class="fas fa-user"></i>
+      </div>
+      <div class="card space icon-relative">
+        <label class="label">Phone number:</label>
+        <input type="text" class="input" data-mask="000 0000000" placeholder="Contact Number" name="phoneNumber" required>
+        <i class="fas fa-phone-square"></i>
+      </div>
+      <div class="card-grp space">
+        <div class="card-item icon-relative">
+          <label class="label">Province:</label>
+          <input type="text" name="expiry-data" class="input"  placeholder="Province" name="province" required>
+          <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <div class="card-item icon-relative">
+          <label class="label">City:</label>
+          <input type="text" class="input"  placeholder="City" name="city" required>
+          <i class="fas fa-map-marker"></i>
+        </div>
+      </div>
+        
+      <div >
+        
+        <button type="submit" class="btn" id="submitbtn" value="submit"> Pay & Billing</button>
+       
+      </div> 
+    </form>
+  
+  </div>
+</div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+<!-- ----------------------------------------------------------Footer start --------------------------------------------------------------->
+<footer>
+  <div class="main">
+      <a href="terms and condition.html" class="t&c"><span>TERMS AND CONDITION </span></a>
+      <span class="dash">|</span>
+
+      <a href="privacy.html" class="pp"><span>PRIVACY POLICY</span></a>
+      <span class="dash">|</span>
+
+      <a href="aboutus.html" class="au"><span>ABOUT US </span></a>
+      <span class="dash">|</span>
+
+      <a href="feedback.html" class="feedback"><span>FEEDBACK</span></a>
+      <span class="dash">|</span>
+
+      <a href="ContactUs.html" class="cu"><span>CONTACT US</span></a>
+      <span class="dash">|</span>
+  </div>
+  <center>
+      <div class="cpoy">
+          <span class="c_text">
+              copyright &copy; 2022 SPARK.LK Allright Reserved
+          </span>
+      </div>
+      </center>
+</footer>	
+<!-- -----------------------------------------------------------Footer end-------------------------------------------------- -->
+
+
+
+
+
+  </body>
+</html>
+

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/header.css" />
+        <title>FEEDBACK</title>
+        <script src="https://kit.fontawesome.com/e8fa4d2e0a.js" crossorigin="anonymous"></script>
+
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                font-family: 'poppins', sans-serif;
+                box-sizing: border-box;
+            }
+
+            
+
+            .hero{
+                width: 100%;
+                height: 100vh;
+                background-image: linear-gradient(rgba(0,0,0,0.5), #3551b5 ), url(images/backgroundreg.jpeg);
+                background-position: center;
+                background-size: cover;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            h1{
+                color: white;
+            }
+
+            form{
+                width: 90%;
+                max-width: 600px;
+            }
+
+            .input-group{
+                margin-bottom: 30px;
+                position: relative;
+            }
+
+            input, textarea{
+                width: 100%;
+                padding: 10px;
+                outline: 0;
+                border: 1px solid #fff;
+                color: #fff;
+                background: transparent;
+                font-size: 15px;
+            }
+
+            label{
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                padding: 10px;
+                color: #fff;
+                cursor: text;
+                transition: 0.2s;
+            }
+
+            button{
+                padding: 10px 0;
+                color: #fff;
+                outline: none;
+                background: transparent;
+                border: 1px solid #fff;
+                width: 100%;
+                cursor: pointer;
+            }
+            
+            input:focus~label,
+            input:valid~label,
+            textarea:focus~label,
+            textarea:valid~label {
+                top: -35px;
+                font-size: 14px;
+            }
+            
+            .row{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .row .input-group{
+              flex-basis: 48%;
+            }
+
+        </style>
+    </head>
+    <body>
+        
+ <!-- -------------------------------------------------Header start ------------------------------------------------->
+ <header>
+    <div id="brand"><a href="/">Spark.LK</a></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Products</a></a>
+          <ul>
+            <li><a href="laptop.html">Laptops</a></li>
+                      <li><a href="phone.html">Mobile Phones</a></li>
+            <li><a href="tablets.html">tablets</a></li>
+                      <li><a href="Electronic_Accessories.html">Other Electronic Accessories</a></li>
+            <li><a href="Beauty & personal care.html">Beauty & personal care</a></li>
+          </ul></li>
+
+      
+          <li><a href="/home">Events</a></li>
+          <li><a href="/home">Notifications</a></li>
+
+        </li>
+        <li id="login"><a href="login.html" >Login</a></li>
+        <li id="signup"><a href="reg.html">Signup</a></li>
+      </ul>
+    </nav>
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <ul class="mobile-menu">
+        <li><a href="/home">Home</a></li>
+        <li><a href="/products">Products</a></li>
+        <li><a href="/about">About</a></li>
+        <li id="login"><a href="login.html" >Login</a></li>
+        <li id="signup"><a href="/signup">Signup</a></li>
+      </ul>
+    </div>
+  </header>
+<!-- ------------------------------------------------------------Header end---------------------------------------------------------- -->
+
+  <script src="index.js"></script>
+
+
+        <div class="hero">
+        <form action="feedback.php" method="POST">
+            <h1>Your Feedback</h1><br><br>
+            <div class="row">
+                <div class="input-group">
+                    <input type="text" id="name" required>
+                    <label for="name"><i class="fa-solid fa-user-large"></i> Your Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="number" required>
+                    <label for="number"><i class="fa-solid fa-phone"></i> Phone No</label>
+                </div>
+            </div>
+            
+            <div class="input-group">
+                <input type="email" id="email" required>
+                <label for="email"><i class="fa-solid fa-square-envelope"></i> email ID</label>
+            </div>
+            <div class="input-group">
+                <textarea id="message" rows="8" required></textarea>
+                <label for="message"><i class="fa-solid fa-message"></i> Your Message</label>
+            </div>
+            <button type="submit">SUBMIT</button>
+        </form>
+        </div>
+
+
+
+
+<!-- ----------------------------------------------------------Footer start --------------------------------------------------------------->
+<footer>
+    <div class="main">
+        <a href="terms and condition.html" class="t&c"><span>TERMS AND CONDITION </span></a>
+        <span class="dash">|</span>
+  
+        <a href="privacy.html" class="pp"><span>PRIVACY POLICY</span></a>
+        <span class="dash">|</span>
+  
+        <a href="aboutus.html" class="au"><span>ABOUT US </span></a>
+        <span class="dash">|</span>
+  
+        <a href="feedback.html" class="feedback.html"><span>FEEDBACK</span></a>
+        <span class="dash">|</span>
+  
+        <a href="ContactUs.html" class="cu"><span>CONTACT US</span></a>
+        <span class="dash">|</span>
+    </div>
+    <center>
+        <div class="cpoy">
+            <span class="c_text">
+                copyright &copy; 2022 SPARK.LK Allright Reserved
+            </span>
+        </div>
+        </center>
+  </footer>	
+  <!-- -----------------------------------------------------------Footer end-------------------------------------------------- -->
+  
+  
+
+
+
+
+
+
+    </body>
+</html>

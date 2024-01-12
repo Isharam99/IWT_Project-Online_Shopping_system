@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style/header.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+    }
+    
+    html {
+      box-sizing: border-box;
+    }
+    
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+    
+    .column {
+      float: left;
+      width: 33.3%;
+      margin-bottom: 16px;
+      padding: 0 8px;
+    }
+    
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      margin: 8px;
+    }
+    
+    .about-section {
+      padding: 50px;
+      text-align: center;
+      background-color: #474e5d;
+      color: white;
+    }
+    
+    .container {
+      padding: 0 16px;
+    }
+    
+    .container::after, .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
+    .title {
+      color: grey;
+    }
+    
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+    }
+    
+    .button:hover {
+      background-color: #555;
+    }
+    
+    @media screen and (max-width: 650px) {
+      .column {
+        width: 100%;
+        display: block;
+      }
+    }
+    </style>
+    
+</head>
+<body>
+
+
+        <!-- -------------------------------------------------Header start ------------------------------------------------->
+        <header>
+          <div id="brand"><a href="/">Spark.LK</a></div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html">Products</a></a>
+                <ul>
+                  <li><a href="laptop.html">Laptops</a></li>
+                  <li><a href="phone.html">Mobile Phones</a></li>
+                  <li><a href="tablets.html">tablets</a></li>
+                  <li><a href="Electronic_Accessories.html">Other Electronic Accessories</a></li>
+                  <li><a href="Beauty & personal care.html">Beauty & personal care</a></li>
+                </ul></li>
+    
+            
+                <li><a href="/home">Events</a></li>
+                <li><a href="/home">Notifications</a></li>
+    
+              </li>
+              <li id="login"><a href="login.html" >Login</a></li>
+              <li id="signup"><a href="reg.html">Signup</a></li>
+            </ul>
+          </nav>
+          <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+              <li><a href="/home">Home</a></li>
+              <li><a href="/products">Products</a></li>
+              <li><a href="/about">About</a></li>
+              <li id="login"><a href="login.html" >Login</a></li>
+              <li id="signup"><a href="/signup">Signup</a></li>
+            </ul>
+          </div>
+        </header>
+    <!-- ------------------------------------------------------------Header end---------------------------------------------------------- -->
+    
+<div class="about-section">
+  <h1>About Us </h1>
+  <p>Some text about who we are and what we do.</p>
+  <p>Launched in 2020. spark in south asia's premier online shopping market place with and active presence in
+    Pakistan. Bangladesh. India.
+    supported by a wide range of tailored marketing. data. and service solution. spark has 30.o00 sellers and
+    500 brands and serves million consumers across the region.
+    Spark has more than 2.5 million product to offer. growing at a very fast pace. Spark offers a divers assortment
+    in categories
+    ranging from consumer electronics to household goods. beauty. fashion. sport equipment. and groceries.
+    Darz is focused on providing an excellent customer experience. ease-of-purchase., comprehensive customer
+    care anda hassle-free shopping and retun experience.
+    SparklIk was acquired by Spark group in May 2015
+    Our primary objective is to provide customers who are with us and those who join us with a secure
+    transaction to commemorate their favorite products and special discounts and reminders on various
+    occasions.</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images/pic1.jpg" alt="Ayesha" style="width:100%">
+      <div class="container">
+        <h2>Ayesha Patabadige</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Give good service to customer.</p>
+        <p>ayesha@spark.com</p>
+        <p><button class="button"><a href="mailto:ayesha@spark.com">Contact</a></button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="images/pic2.jpg" alt="Selva" style="width:100%">
+      <div class="container">
+        <h2>Selva Jayasooriya</h2>
+        <p class="title">Selles Manajor</p>
+        <p>Allways we give good product to our customer.</p>
+        <p>selva@spark.com</p>
+        <p><button class="button"><a href="mailto:selva@spark.com">Contact</a></button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="images/pic3.jpg" alt="Mayantha" style="width:100%">
+      <div class="container">
+        <h2>Mayantha Abeyrathne</h2>
+        <p class="title">Event Manajor</p>
+        <p>we give items to customer with special offers under events .</p>
+        <p>mayantha@spark.com</p>
+        <p><button class="button"><a href="mailto:mayantha@spark.com">Contact</a></button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- ----------------------------------------------------------Footer start --------------------------------------------------------------->
+<footer>
+  <div class="main">
+      <a href="#" class="t&c"><span>TERMS AND CONDITION </span></a>
+      <span class="dash">|</span>
+
+      <a href="privacy.html" class="pp"><span>PRIVACY POLICY</span></a>
+      <span class="dash">|</span>
+
+      <a href="aboutus.html" class="au"><span>ABOUT US </span></a>
+      <span class="dash">|</span>
+
+      <a href="feedback.html" class="fb"><span>FEEDBACK</span></a>
+      <span class="dash">|</span>
+
+      <a href="ContactUs.html" class="cu"><span>CONTACT US</span></a>
+      <span class="dash">|</span>
+  </div>
+  <center>
+      <div class="cpoy">
+          <span class="c_text">
+              copyright &copy; 2022 SPARK.LK Allright Reserved
+          </span>
+      </div>
+      </center>
+</footer>	
+<!-- -----------------------------------------------------------Footer end-------------------------------------------------- -->
+
+
+
+
+
+
+</body>
+</html>
