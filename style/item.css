@@ -1,0 +1,73 @@
+html{
+    font-size:62.5%;
+    overflow-x:hidden;
+}
+body{
+    text-align: center;
+    background: #eee;
+    background-position: center;
+}
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.container .title{
+ font-size:3.5rem;
+ color:#444;
+ margin-top: 12rem;
+ margin-bottom: 3rem;
+ text-transform: uppercase;
+ text-align: center;
+}
+
+.container .products-container{
+
+display:grid;
+grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+gap:2rem;
+
+
+}
+.container .products-container .products{
+text-align: center;
+padding: 3rem 2rem;
+background: #fff;
+box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+outline: .1rem solid#ccc;
+outline-offset: -1.5rem;
+cursor:pointer;
+
+}
+.container .products-container .products:hover{
+    outline: .2rem solid#222;
+    outline-offset: 0;
+}
+
+
+.container .products-container .products img{
+height:25rem;
+
+}
+
+.container .products-container .products:hover img{
+    transform: scale(.9);
+}
+.container .products-container .products h3{
+    padding: .5rem 0;
+    font-size:2rem;
+    color:#444
+
+}
+.container .products-container .products:hover h3{
+color: #ae4627;
+
+}
+
+
+.container .products-container .products .price{
+    font-size:2rem;
+    color:#444
+
+}
